@@ -1,14 +1,7 @@
 pipeline {
     agent any
-    
+	
     stages {
-        stage('Get Code')
-        {
-            steps{
-                bat 'dir'
-                bat 'echo %WORKSPACE%'
-            }
-        }
         stage('Get Code') {
             steps {
                 // Obtener código del repo
